@@ -8,11 +8,11 @@ def check_level arr
 
     # Check if ascending
     0.upto(subarr.length-2){|i|
-      asc_valid = false if !check_two subarr[i], subarr[i+1]
+      asc_valid = false if !check_two(subarr[i], subarr[i+1])
     }   
     # Check if ascending (in reverse aka descending)
     (subarr.length-1).downto(1){|i|
-      desc_valid = false if !check_two subarr[i], subarr[i-1]
+      desc_valid = false if !check_two(subarr[i], subarr[i-1])
     }
     #puts "#{subarr} - Asc #{asc_valid}, Desc #{desc_valid}"
     # If we get a valid combo, return immediately
