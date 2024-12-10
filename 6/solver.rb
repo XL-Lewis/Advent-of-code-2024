@@ -1,5 +1,4 @@
 file = File.readlines("data.txt")
-guard_loc = ''
 file.each_with_index do |line,index|
     puts "#{index} - #{line.index('^')}" if line.include? '^'
 end
