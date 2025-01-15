@@ -3,4 +3,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "sorbet"
+gem "ruby-lsp"
+gem "rubocop"
